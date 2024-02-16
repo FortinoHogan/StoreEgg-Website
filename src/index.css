@@ -10,8 +10,13 @@
     background-color: #1E1F22
 }
 
-.home-background-dark{
+.home-background-dark {
     background-color: #313338
+}
+
+.myproducts-button:hover {
+    box-shadow: #000 0 0 10px;
+    transition: ease-in-out 0.2s;
 }
 
 .button-background {
@@ -31,6 +36,16 @@
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
+.myproduct-card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.2s;
+}
+
 .product-image {
     max-width: 100%;
     max-height: 100%;
@@ -44,12 +59,37 @@
     background-color: #000
 }
 
-.minigame-background {
+.button-background-buy-dark:hover {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.2s;
+}
+
+.button-background-buy:hover {
+    box-shadow: #8775A9 0 0 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.minigame-button-background {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.minigame-background-dark {
+.minigame-button-background:hover {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.2s;
+}
+
+.minigame-button-background-dark {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background-color: #B5BAC1;
+}
+
+.minigame-button-background-dark:hover {
+    box-shadow: 0 0 1rem 0 rgba(174, 174, 174, 0.5);
+    background-color: #B5BAC1;
+    transition: ease-in-out 0.2s;
+}
+
+.minigame-background-dark {
     background-color: #B5BAC1;
 }
 
@@ -113,6 +153,7 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-.myproducts-background-dark, .detail-product-background-dark{
+.myproducts-background-dark,
+.detail-product-background-dark {
     background-color: #313338;
 }

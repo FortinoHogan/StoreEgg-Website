@@ -11,8 +11,6 @@ import BackButton from "../Components/BackButton";
 import SuccessModal from "../Components/Modals/SuccessModal";
 import { ADD_VALUE, SUBTRACT_VALUE } from "../redux/Slices/coinsSlices";
 import { useTheme } from "../Contexts/ThemeContext";
-import MyProducts from "./MyProducts";
-import { RootState } from "../redux/store";
 
 const DetailProduct = () => {
   const { id, index } = useParams();
@@ -66,7 +64,13 @@ const DetailProduct = () => {
 
   if (!product) {
     return (
-      <p className="text-center h-screen flex items-center justify-center text-red-600 text-3xl font-bold">
+      <p
+        className={
+          darkMode
+            ? "text-center h-screen flex items-center justify-center text-black text-3xl font-bold"
+            : "text-center h-screen flex items-center justify-center text-red-600 text-3xl font-bold"
+        }
+      >
         Loading...
       </p>
     );
@@ -78,8 +82,8 @@ const DetailProduct = () => {
         <div
           className={
             darkMode
-              ? "product-card flex flex-col items-center my-8 pt-20 pb-8 bg-white"
-              : "product-card flex flex-col items-center my-8 pt-20 pb-8"
+              ? "myproduct-card flex flex-col items-center my-8 pt-20 pb-8 bg-white"
+              : "myproduct-card flex flex-col items-center my-8 pt-20 pb-8"
           }
         >
           <button onClick={toggleImageModal}>

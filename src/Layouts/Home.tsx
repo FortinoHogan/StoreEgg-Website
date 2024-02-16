@@ -31,15 +31,31 @@ const Home = (props: IHome) => {
 
   const toggleDarkModeButton = () => {
     toggleDarkMode();
-  }
+  };
 
   return (
-    <div className={darkMode ? "home-background-dark flex flex-col items-center":"flex flex-col items-center"}>
+    <div
+      className={
+        darkMode
+          ? "home-background-dark flex flex-col items-center"
+          : "flex flex-col items-center"
+      }
+    >
       <div className="w-9/12 pt-8 flex justify-between">
-        <h1 className={darkMode ? "font-bold text-2xl text-white" : "font-bold text-2xl"}>Avalilable Products</h1>
+        <h1
+          className={
+            darkMode ? "font-bold text-2xl text-white" : "font-bold text-2xl"
+          }
+        >
+          Avalilable Products
+        </h1>
         <div className="flex gap-20 items-center">
           <label className="switch">
-            <input type="checkbox" onChange={toggleDarkModeButton} checked={darkMode}></input>
+            <input
+              type="checkbox"
+              onChange={toggleDarkModeButton}
+              checked={darkMode}
+            ></input>
             <span className="slider round"></span>
           </label>
           <div>
@@ -50,7 +66,13 @@ const Home = (props: IHome) => {
         </div>
       </div>
       {!dataLoaded && (
-        <p className="min-h-screen text-center flex items-center justify-center text-red-600 text-3xl font-bold">
+        <p
+          className={
+            darkMode
+              ? "min-h-screen text-center flex items-center justify-center text-gray-300 text-3xl font-bold"
+              : "min-h-screen text-center flex items-center justify-center text-red-600 text-3xl font-bold"
+          }
+        >
           Loading...
         </p>
       )}

@@ -19,7 +19,7 @@ const MyProducts = () => {
     <div className={darkMode ? "myproducts-background-dark h-screen mt-0" : ""}>
       <div className="w-6/12 mx-auto py-8">
         <BackButton url={"/"} />
-        <div className="product-card bg-white rounded">
+        <div className="myproduct-card bg-white rounded">
           <h2 className="text-3xl font-bold text-center mt-10 pt-10">
             My Products
           </h2>

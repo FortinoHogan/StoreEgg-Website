@@ -17,7 +17,7 @@ const Navbar = (props: INavbar) => {
         <div className="pt-5 flex justify-between relative">
           <Link to="/myproducts">
             <Button
-              className={"button-background absolute rounded shadow-xl"}
+              className={"button-background absolute rounded shadow-xl myproducts-button"}
               text={"My Products >"}
               textStyle={"text-lg font-semibold p-3"}
             />
